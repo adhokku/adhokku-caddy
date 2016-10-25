@@ -16,7 +16,7 @@ chmod +x /usr/local/etc/rc.d/caddy
 
 mkdir -p /usr/local/www/
 cat > /usr/local/www/Caddyfile <<END
-:5000
+:$PORT
 root /app/static/
 END
 

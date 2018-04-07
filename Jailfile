@@ -2,7 +2,7 @@
 set -e
 
 ASSUME_ALWAYS_YES=yes pkg install curl
-curl -sfL 'https://caddyserver.com/download/build?os=freebsd&arch=amd64&features=' -o /tmp/caddy.tar.gz
+curl -sfL 'https://github.com/mholt/caddy/releases/download/v0.10.12/caddy_v0.10.12_freebsd_amd64.tar.gz' -o /tmp/caddy.tar.gz
 cd /tmp
 tar xf caddy.tar.gz
 
